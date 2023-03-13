@@ -252,6 +252,6 @@ MonoBehaviour:
     type: 3}
   prefabSprite: {fileID: 1000014090761352, guid: 30a6ba41f0d264815a76b64a60ee0b62,
     type: 3}
-  startFaceUp: 1
+  startFaceUp: 0
   deckAnchor: {fileID: 0}
   cards: []
