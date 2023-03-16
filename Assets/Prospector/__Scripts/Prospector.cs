@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
      private Transform  layoutAnchor;
      private Deck       deck;
      private JsonLayout jsonLayout;
+     private Dictionary<int, CardProspector> mineIdToCardDict;
 
      void Start () {
          // Set the private Singleton. We'll use this later.
@@ -77,7 +78,8 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
              layoutAnchor = tGO.transform;             // Grab its Transform
          }
 
-         CardProspector cp;                                                   // b
+         CardProspector cp;   
+          mineIdToCardDict = new Dictionary<int, CardProspector>();                                          // b
 
          // Iterate through the JsonLayoutSlots pulled from the JSON_Layout
          foreach (JsonLayoutSlot slot in jsonLayout.slots) {
@@ -103,6 +105,7 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
 
 
              mine.Add(cp); // Add this CardProspector to the List<> mine
+             mineIdToCardDict.Add(slot.id, cp);
          }
      }
      /// <summary>
@@ -175,6 +178,25 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
          }
      }
      /// <summary>
+     /// This turns cards in the Mine face-up and face-down
+     /// </summary>
+     public void SetMineFaceUps() {                                           // d
+         CardProspector coverCP;
+         foreach (CardProspector cp in mine) {
+             bool faceUp = true; // Assume the card will be face-up
+
+             // Iterate through the covering cards by mine layout ID
+             foreach (int coverID in cp.layoutSlot.hiddenBy) {
+                 coverCP = mineIdToCardDict[coverID];
+                 // If the covering card is null or still in the mine...
+                 if (coverCP == null || coverCP.state == eCardState.mine) {
+                     faceUp = false; // then this card is face-down
+                 }
+             }
+             cp.faceUp = faceUp; // Set the value on the card
+         }
+     }
+     /// <summary>
      /// Handler for any time a card in the game is clicked
      /// </summary>
      /// <param name="cp">The CardProspector that was clicked</param>
@@ -191,7 +213,20 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
              S.UpdateDrawPile();          // Restack the drawPile
              break;
          case eCardState.mine:
-             // More to come here
+              // Clicking a card in the mine will check if it's a valid play
+             bool validMatch = true;  // Initially assume that it's valid
+
+             // If the card is face-down, it's not valid
+             if (!cp.faceUp) validMatch = false;
+
+             // If it's not an adjacent rank, it's not valid
+             if (!cp.AdjacentTo(S.target)) validMatch = false;                // b
+
+             if (validMatch) {        // If it's a valid card
+                 S.mine.Remove(cp);   // Remove it from the tableau List
+                 S.MoveToTarget(cp);  // Make it the target card
+                 S.SetMineFaceUps();  
+             }
              break;
          }
      }
