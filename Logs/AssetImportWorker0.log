@@ -1051,3 +1051,157 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 268.339020 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33637ac7a8e2ba9e9de7b2babe998f19') in 0.121970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.792791 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2274a4ec5d7019650480541eb00efcf1') in 0.019877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.520178 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2a705a96f9b0fb62bc1bed373c31b0') in 0.024778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.973882 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd947154a5495c3657d3d6014b41b22') in 0.024145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 205.119487 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac87a57b39c46988bd333efe9ada5660') in 0.017826 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000939 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16dd87000 may have been prematurely finalized
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.859 seconds
+Domain Reload Profiling:
+	ReloadAssembly (860ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (612ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (263ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1697 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (22.0 KB). Loaded Objects now: 2260.
+Memory consumption went from 77.8 MB to 77.8 MB.
+Total: 15.439375 ms (FindLiveObjects: 0.146584 ms CreateObjectMapping: 0.057250 ms MarkObjects: 15.198875 ms  DeleteObjects: 0.034959 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 225.514008 seconds.
+  path: Assets/Prospector/__Scripts/BezierMover.cs
+  artifactKey: Guid(50b5adf3d96f44563b51ec5f8e19859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/BezierMover.cs using Guid(50b5adf3d96f44563b51ec5f8e19859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399a497d47ae8b05a2bfb68755056ca1') in 0.012944 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000976 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16dd87000 may have been prematurely finalized
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.866 seconds
+Domain Reload Profiling:
+	ReloadAssembly (867ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (604ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (213ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1697 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (22.1 KB). Loaded Objects now: 2263.
+Memory consumption went from 77.8 MB to 77.8 MB.
+Total: 3.100833 ms (FindLiveObjects: 0.096541 ms CreateObjectMapping: 0.036084 ms MarkObjects: 2.949333 ms  DeleteObjects: 0.018166 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 619.565414 seconds.
+  path: Assets/Prospector/__Scripts/BezierMover.cs
+  artifactKey: Guid(50b5adf3d96f44563b51ec5f8e19859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/BezierMover.cs using Guid(50b5adf3d96f44563b51ec5f8e19859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6032c83b6bddaf81dfaa7fda1e537c') in 0.005994 seconds 
