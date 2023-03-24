@@ -225,9 +225,11 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
     /// <param name="won">true if the player won</param>
      void GameOver( bool won ) {
          if ( won ) {
-             Debug.Log( "Game Over. You won! :)" );
+             //Debug.Log( "Game Over. You won! :)" );
+             ScoreManager.TALLY( eScoreEvent.gameWin );
          } else {
-             Debug.Log( "Game Over. You Lost. :(" );
+            ScoreManager.TALLY( eScoreEvent.gameLoss );
+             //Debug.Log( "Game Over. You Lost. :(" );
          }
 
          // Reset the CardSpritesSO singleton to null
@@ -251,6 +253,7 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
              // Call two methods on the Prospector Singleton S
              S.MoveToTarget( S.Draw() );  // Draw a new target card
              S.UpdateDrawPile();          // Restack the drawPile
+             ScoreManager.TALLY( eScoreEvent.draw );
              break;
          case eCardState.mine:
               // Clicking a card in the mine will check if it's a valid play
@@ -265,7 +268,8 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
              if (validMatch) {        // If it's a valid card
                  S.mine.Remove(cp);   // Remove it from the tableau List
                  S.MoveToTarget(cp);  // Make it the target card
-                 S.SetMineFaceUps();  
+                 S.SetMineFaceUps();
+                 ScoreManager.TALLY( eScoreEvent.mine );  
              }
              break;
          }
