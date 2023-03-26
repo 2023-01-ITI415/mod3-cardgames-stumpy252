@@ -646,6 +646,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457d268958bfb4f2684ce6814ce3a684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floatingScorePrefab: {fileID: 4992480775420375188, guid: c1c45e4d319aa43d2bbd00b3d28a46c5,
+    type: 3}
+  floatDuration: 0.75
+  fsPosMid: {x: 0.5, y: 0.9}
+  fsPosRun: {x: 0.5, y: 0.75}
+  fsPosMid2: {x: 0.4, y: 1}
+  fsPosEnd: {x: 0.5, y: 0.95}
   logScoreEvents: 1
   chain: 0
   scoreRun: 0
