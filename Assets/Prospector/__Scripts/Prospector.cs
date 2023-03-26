@@ -244,6 +244,7 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
          Invoke ("ReloadLevel", roundDelay);
          // Note that there are TWO underscores at the beginning of "__Prospector…
          //SceneManager.LoadScene( "__Prospector_Scene_0" );
+         UITextManager.GAME_OVER_UI(won);
      }
       void ReloadLevel() {
         // Reload the scene, resetting the game
