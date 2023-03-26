@@ -8,14 +8,19 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
  public class Prospector : MonoBehaviour {
      private static Prospector S; // A private Singleton for Prospector
 
+    [Header("Inscribed")]
+     public float roundDelay = 2f;  // 2 sec delay between rounds
+
+
+
 
  [Header("Dynamic")]
      public List<CardProspector> drawPile;
      public List<CardProspector> discardPile;
      public List<CardProspector> mine;
-     public CardProspector       target;
+     public CardProspector target;
      private Transform  layoutAnchor;
-     private Deck       deck;
+     private Deck deck;
      private JsonLayout jsonLayout;
      private Dictionary<int, CardProspector> mineIdToCardDict;
 
@@ -235,9 +240,15 @@ using UnityEngine.SceneManagement;   // We'll need this line later in the chapte
          // Reset the CardSpritesSO singleton to null
          CardSpritesSO.RESET();                                               // b
          // Reload the scene, resetting the game
+         // wait a moment for score to catch up
+         Invoke ("ReloadLevel", roundDelay);
          // Note that there are TWO underscores at the beginning of "__Prospector…
-         SceneManager.LoadScene( "__Prospector_Scene_0" );
+         //SceneManager.LoadScene( "__Prospector_Scene_0" );
      }
+      void ReloadLevel() {
+        // Reload the scene, resetting the game
+        SceneManager.LoadScene("__Prospector_Scene_0");
+      }
      /// <summary>
      /// Handler for any time a card in the game is clicked
      /// </summary>
